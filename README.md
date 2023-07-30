@@ -1,70 +1,32 @@
-# Getting Started with Create React App
+# Read before you examine!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+All info about the project is given in this readme file, after reading this file the code is assumed to be self-explanatory.
 
-## Available Scripts
+## Exciting Features and Efficiency:  
+- Whole data is coming from and updating Firestore. Reloading retains the chats and order of chats 
+- Only that chat is loaded that is required. I have kept chats and users as different collections in firebase.
+- The change of order of users in chat list is done by a single request efficiently.
+- All errors are handled and notified to the user.
 
-In the project directory, you can run:
+## Packages used
+- react-router-dom: for routing
+- react-toastify: for displaying messages.
+- react-spinners: for spinner in loading phase.
 
-### `npm start`
+## CSS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- used css modules
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Components
+- Screen: The main component that gets rendered and remains till end. It contains all the chat data. It renders Chat and ChatLink components.
+- ChatLink: The reusable component that appears on left hand side of the chat that contains all the users along with the recent chat.
+- Chat- The main chat component that lets you chat with the user.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Routing
 
-### `npm run build`
+- I have used react router-dom.
+- The chats have path as /chat/:id
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Outlet Context
+- I have used outlet context to load chat from Scree component.
