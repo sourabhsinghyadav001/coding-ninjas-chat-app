@@ -1,0 +1,43 @@
+.container {
+  height: 100vh;
+}
+.self,
+.other {
+  max-width: 45%;
+  font-size: 14px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 4px;
+}
+.other {
+  margin-left: auto;
+  background-color: azure;
+}
+.self {
+  background-color: aquamarine;
+}
+.send {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+}
+.send input,
+.send input:focus,
+.send input:active {
+  width: 100%;
+  display: inline-block;
+  border: 1px solid #8c8c8c;
+  border-radius: 4px;
+  outline: none;
+  padding: 8px;
+}
+.send img {
+  height: 16px;
+  width: 16px;
+}
+.send button {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

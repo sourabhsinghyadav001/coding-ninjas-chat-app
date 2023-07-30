@@ -1,0 +1,41 @@
+.container,
+.left,
+.right {
+  height: 100vh;
+  max-height: 100vh;
+  overflow-y: auto;
+}
+.container {
+  display: flex;
+}
+.left {
+  width: 32%;
+}
+.right {
+  width: 68%;
+}
+.search {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+}
+.search input,
+.search input:focus,
+.search input:active {
+  width: 100%;
+  display: inline-block;
+  border: 1px solid #8c8c8c;
+  border-radius: 4px;
+  outline: none;
+  padding: 2px 5px;
+}
+.search img {
+  height: 16px;
+  width: 16px;
+}
+.search button {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
